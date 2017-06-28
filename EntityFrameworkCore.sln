@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore", "EntityFrameworkCore\EntityFrameworkCore.csproj", "{CAC46A96-CA9A-49C7-9CCF-CD9FE1CB66BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreNewDb", "EntityFrameworkCore\EntityFrameworkCoreNewDb.csproj", "{CAC46A96-CA9A-49C7-9CCF-CD9FE1CB66BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreExistingDb", "EntityFrameworkCoreExistingDb\EntityFrameworkCoreExistingDb.csproj", "{946632D5-1588-4B72-BDA6-FE281E9471E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CAC46A96-CA9A-49C7-9CCF-CD9FE1CB66BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAC46A96-CA9A-49C7-9CCF-CD9FE1CB66BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC46A96-CA9A-49C7-9CCF-CD9FE1CB66BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946632D5-1588-4B72-BDA6-FE281E9471E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946632D5-1588-4B72-BDA6-FE281E9471E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946632D5-1588-4B72-BDA6-FE281E9471E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946632D5-1588-4B72-BDA6-FE281E9471E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

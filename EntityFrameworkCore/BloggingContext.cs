@@ -16,7 +16,7 @@ namespace EntityFrameworkCore
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-0JT666N;Database=EFGetStarted.ConsoleApp.NewDb;Trusted_Connection=True;");
         }
-        /*
+        /* New Database
             Tools –> NuGet Package Manager –> Package Manager Console
             Run "Add-Migration MyFirstMigration" to scaffold a migration to create the initial set of tables for your model.
             Run "Update-Database" to apply the new migration to the database.Because your database doesn't exist yet, it will be created for you before the migration is applied.
