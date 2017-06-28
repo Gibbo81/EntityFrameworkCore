@@ -12,6 +12,7 @@ namespace EntityFrameworkCore
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Place> Place { get; set; }
+        public DbSet<MultiKey> MultiKey { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -22,6 +23,19 @@ namespace EntityFrameworkCore
             Run "Add-Migration MyFirstMigration" to scaffold a migration to create the initial set of tables for your model.
             Run "Update-Database" to apply the new migration to the database.Because your database doesn't exist yet, it will be created for you before the migration is applied.
         */
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MultiKey>().HasKey(x => new {x.Session, x.Version});
+            modelBuilder.Entity<MultiKey>().Property(x => x.Description).HasMaxLength(200);
+        }
+    }
+
+    public class MultiKey
+    {
+        public int Session { get; set; }
+        public int Version { get; set; }
+        public string Description{ get; set; }
     }
 
     public class Place
@@ -36,7 +50,7 @@ namespace EntityFrameworkCore
         public string Title { get; set; }
         public string Content { get; set; }
 
-        public int BlogId { get; set; }
+        public int BlogId { get; set; } //used for the field of the foreign key 
         public Blog Blog { get; set; }
     }
 

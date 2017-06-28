@@ -210,6 +210,18 @@
     <Compile Include="Migrations\20170628125619_Third.designer.cs">
       <DependentUpon>20170628125619_Third.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170628131502_MultiKey.cs" />
+    <Compile Include="Migrations\20170628131502_MultiKey.designer.cs">
+      <DependentUpon>20170628131502_MultiKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20170628132606_MaxLen.cs" />
+    <Compile Include="Migrations\20170628132606_MaxLen.designer.cs">
+      <DependentUpon>20170628132606_MaxLen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20170628132727_MaxLen2.cs" />
+    <Compile Include="Migrations\20170628132727_MaxLen2.designer.cs">
+      <DependentUpon>20170628132727_MaxLen2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\BloggingContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,9 +8,10 @@ using EntityFrameworkCore;
 namespace EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    partial class BloggingContextModelSnapshot : ModelSnapshot
+    [Migration("20170628132606_MaxLen")]
+    partial class MaxLen
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -32,9 +33,7 @@ namespace EntityFrameworkCore.Migrations
                 {
                     b.Property<int>("Session");
 
-                    b.Property<int>("Version");
-
-                    b.Property<string>("Description")
+                    b.Property<int>("Version")
                         .HasMaxLength(200);
 
                     b.HasKey("Session", "Version");

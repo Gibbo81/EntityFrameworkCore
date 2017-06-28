@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameworkCore
 {
@@ -14,7 +15,7 @@ namespace EntityFrameworkCore
             {
                 var x = db.Database;
 
-                db.Blogs.Add(new Blog() {Url = "https://www.benday.com/2017/02/14/walkthrough-entity-framework-core-1-1-with-migrations/" });
+                db.Blogs.Add(new Blog() { Url = "https://www.benday.com/2017/02/14/walkthrough-entity-framework-core-1-1-with-migrations/" });
                 var count = db.SaveChanges();
                 Console.WriteLine("{0} records saved to database", count);
 
@@ -23,13 +24,11 @@ namespace EntityFrameworkCore
                 foreach (var r in db.Blogs)
                     Console .WriteLine("- {0}", r.Url);
 
+                var res = db.Blogs.FirstOrDefault(t => t.Url =="https://www.benday.com/2017/02/14/walkthrough-entity-framework-core-1-1-with-migrations/");
+                Console.WriteLine("First: {0}", res.BlogId);
+
+                Console.ReadLine();
             }
-
-
-
-
-
-            Console.ReadLine();
         }
     }
 }
