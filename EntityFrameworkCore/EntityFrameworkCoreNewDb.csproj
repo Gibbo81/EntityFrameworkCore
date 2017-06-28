@@ -206,6 +206,10 @@
     <Compile Include="Migrations\20170628085818_MyFirstMigration2.designer.cs">
       <DependentUpon>20170628085818_MyFirstMigration2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170628125619_Third.cs" />
+    <Compile Include="Migrations\20170628125619_Third.designer.cs">
+      <DependentUpon>20170628125619_Third.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\BloggingContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

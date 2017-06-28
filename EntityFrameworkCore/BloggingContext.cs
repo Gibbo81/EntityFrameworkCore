@@ -11,6 +11,7 @@ namespace EntityFrameworkCore
     {
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Place> Place { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,6 +22,12 @@ namespace EntityFrameworkCore
             Run "Add-Migration MyFirstMigration" to scaffold a migration to create the initial set of tables for your model.
             Run "Update-Database" to apply the new migration to the database.Because your database doesn't exist yet, it will be created for you before the migration is applied.
         */
+    }
+
+    public class Place
+    {
+        public int PlaceId { get; set; }
+        public string Code { get; set; }
     }
 
     public class Post

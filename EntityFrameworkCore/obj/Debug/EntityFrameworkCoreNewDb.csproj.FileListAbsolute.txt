@@ -78,3 +78,4 @@ C:\Git\EntityFrameworkCore\EntityFrameworkCore\bin\Debug\System.Runtime.Compiler
 C:\Git\EntityFrameworkCore\EntityFrameworkCore\bin\Debug\System.Text.Encodings.Web.xml
 C:\Git\EntityFrameworkCore\EntityFrameworkCore\obj\Debug\EntityFrameworkCore.exe
 C:\Git\EntityFrameworkCore\EntityFrameworkCore\obj\Debug\EntityFrameworkCore.pdb
+C:\Git\EntityFrameworkCore\EntityFrameworkCore\obj\Debug\EntityFrameworkCoreNewDb.csprojResolveAssemblyReference.cache
