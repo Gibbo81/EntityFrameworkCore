@@ -1,9 +1,6 @@
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\EntityFrameworkCoreExistingDb.exe.config
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\EntityFrameworkCoreExistingDb.exe
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\EntityFrameworkCoreExistingDb.pdb
-C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\obj\Debug\EntityFrameworkCoreExistingDb.csprojResolveAssemblyReference.cache
-C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\obj\Debug\EntityFrameworkCoreExistingDb.exe
-C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\obj\Debug\EntityFrameworkCoreExistingDb.pdb
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
@@ -81,3 +78,6 @@ C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\System.Diagno
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\System.Interactive.Async.xml
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\bin\Debug\System.Text.Encodings.Web.xml
+C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\obj\Debug\EntityFrameworkCoreExistingDb.csprojResolveAssemblyReference.cache
+C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\obj\Debug\EntityFrameworkCoreExistingDb.exe
+C:\Git\EntityFrameworkCore\EntityFrameworkCoreExistingDb\obj\Debug\EntityFrameworkCoreExistingDb.pdb

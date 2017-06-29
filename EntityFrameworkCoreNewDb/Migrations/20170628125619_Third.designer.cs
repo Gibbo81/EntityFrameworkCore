@@ -1,15 +1,13 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using EntityFrameworkCore;
 
-namespace EntityFrameworkCore.Migrations
+namespace EntityFrameworkCoreNewDb.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20170628085818_MyFirstMigration2")]
-    partial class MyFirstMigration2
+    [Migration("20170628125619_Third")]
+    partial class Third
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,6 +25,18 @@ namespace EntityFrameworkCore.Migrations
                     b.HasKey("BlogId");
 
                     b.ToTable("Blogs");
+                });
+
+            modelBuilder.Entity("EntityFrameworkCore.Place", b =>
+                {
+                    b.Property<int>("PlaceId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Code");
+
+                    b.HasKey("PlaceId");
+
+                    b.ToTable("Place");
                 });
 
             modelBuilder.Entity("EntityFrameworkCore.Post", b =>

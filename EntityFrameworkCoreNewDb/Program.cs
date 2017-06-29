@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntityFrameworkCore
+namespace EntityFrameworkCoreNewDb
 {
     class Program
     {

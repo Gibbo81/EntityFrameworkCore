@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CAC46A96-CA9A-49C7-9CCF-CD9FE1CB66BF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EntityFrameworkCore</RootNamespace>
-    <AssemblyName>EntityFrameworkCore</AssemblyName>
+    <RootNamespace>EntityFrameworkCoreNewDb</RootNamespace>
+    <AssemblyName>EntityFrameworkCoreNewDb</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -198,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BloggingContext.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Migrations\20170628085256_MyFirstMigration.cs" />
     <Compile Include="Migrations\20170628085256_MyFirstMigration.designer.cs">
       <DependentUpon>20170628085256_MyFirstMigration.cs</DependentUpon>

@@ -1,15 +1,13 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using EntityFrameworkCore;
 
-namespace EntityFrameworkCore.Migrations
+namespace EntityFrameworkCoreNewDb.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20170628132727_MaxLen2")]
-    partial class MaxLen2
+    [Migration("20170628132606_MaxLen")]
+    partial class MaxLen
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,9 +31,7 @@ namespace EntityFrameworkCore.Migrations
                 {
                     b.Property<int>("Session");
 
-                    b.Property<int>("Version");
-
-                    b.Property<string>("Description")
+                    b.Property<int>("Version")
                         .HasMaxLength(200);
 
                     b.HasKey("Session", "Version");

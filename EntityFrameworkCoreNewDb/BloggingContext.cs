@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntityFrameworkCore
+namespace EntityFrameworkCoreNewDb
 {
     class BloggingContext : DbContext
     {

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EntityFrameworkCore.Migrations
+namespace EntityFrameworkCoreNewDb.Migrations
 {
     public partial class MaxLen2 : Migration
     {

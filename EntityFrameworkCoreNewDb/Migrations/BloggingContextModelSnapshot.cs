@@ -1,17 +1,13 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
-using EntityFrameworkCore;
 
-namespace EntityFrameworkCore.Migrations
+namespace EntityFrameworkCoreNewDb.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20170629090341_DefaultValue_MultiKeyTable")]
-    partial class DefaultValue_MultiKeyTable
+    partial class BloggingContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

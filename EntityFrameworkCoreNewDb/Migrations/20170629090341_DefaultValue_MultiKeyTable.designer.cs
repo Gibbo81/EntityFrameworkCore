@@ -1,15 +1,13 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using EntityFrameworkCore;
 
-namespace EntityFrameworkCore.Migrations
+namespace EntityFrameworkCoreNewDb.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20170628131502_MultiKey")]
-    partial class MultiKey
+    [Migration("20170629090341_DefaultValue_MultiKeyTable")]
+    partial class DefaultValue_MultiKeyTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,6 +33,11 @@ namespace EntityFrameworkCore.Migrations
 
                     b.Property<int>("Version");
 
+                    b.Property<string>("Description")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue(" x-O-x")
+                        .HasMaxLength(200);
+
                     b.HasKey("Session", "Version");
 
                     b.ToTable("MultiKey");
@@ -59,7 +62,8 @@ namespace EntityFrameworkCore.Migrations
 
                     b.Property<int>("BlogId");
 
-                    b.Property<string>("Content");
+                    b.Property<string>("Content")
+                        .IsConcurrencyToken();
 
                     b.Property<string>("Title");
 
