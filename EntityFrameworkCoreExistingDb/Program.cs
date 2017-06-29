@@ -8,7 +8,7 @@ namespace EntityFrameworkCoreExistingDb
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //https://docs.microsoft.com/en-us/ef/efcore-and-ef6/index  
         {
             /* Existing DB 
              * run :

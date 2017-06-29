@@ -222,6 +222,10 @@
     <Compile Include="Migrations\20170628132727_MaxLen2.designer.cs">
       <DependentUpon>20170628132727_MaxLen2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170629090341_DefaultValue_MultiKeyTable.cs" />
+    <Compile Include="Migrations\20170629090341_DefaultValue_MultiKeyTable.designer.cs">
+      <DependentUpon>20170629090341_DefaultValue_MultiKeyTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\BloggingContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameworkCore
@@ -27,7 +24,8 @@ namespace EntityFrameworkCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MultiKey>().HasKey(x => new {x.Session, x.Version});
-            modelBuilder.Entity<MultiKey>().Property(x => x.Description).HasMaxLength(200);
+            modelBuilder.Entity<MultiKey>().Property(x => x.Description).HasMaxLength(200)
+                                                                        .HasDefaultValue(" x-O-x");
         }
     }
 
@@ -48,6 +46,7 @@ namespace EntityFrameworkCore
     {
         public int PostId { get; set; }
         public string Title { get; set; }
+        [ConcurrencyCheck] //If a property is configured as a concurrency token then EF will check that no other user has modified that value in the database when saving changes to that record using an optimistic concurrency patter
         public string Content { get; set; }
 
         public int BlogId { get; set; } //used for the field of the foreign key 
